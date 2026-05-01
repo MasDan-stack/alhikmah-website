@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="id" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AL-HIKMAH - Layanan private mengaji Al-Qur'an dan Iqra datang ke rumah untuk anak usia 10-15 tahun. Belajar nyaman, fokus, dan menyenangkan bersama pengajar berpengalaman.">
+    <meta name="keywords" content="les mengaji, private mengaji, belajar quran, iqra, tahsin, hafalan quran, les alquran rumah, guru mengaji datang, AL-HIKMAH">
+    <meta name="author" content="AL-HIKMAH">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="AL-HIKMAH - Private Mengaji Datang ke Rumah">
+    <meta property="og:description" content="Program private mengaji Al-Qur'an dan Iqra untuk anak usia 10–15 tahun dengan pengajar ramah, sabar, dan berpengalaman.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="id_ID">
+    <meta name="theme-color" content="#0d7a3e">
+    <title>AL-HIKMAH | Private Mengaji Datang ke Rumah</title>
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Fontsource Poppins -->
+    <link href="https://cdn.jsdelivr.net/npm/@fontsource/poppins@5.1.1/index.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Logo Watermark -->
+<div class="logo-watermark" aria-hidden="true">
+    <div class="watermark-container">
+        <img src="assets/img/logo/logo.png" alt="AL-HIKMAH">
+        <div class="watermark-text">AL-HIKMAH</div>
+    </div>
+</div>
+
+    <!-- Loading Animation -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loader-container">
+            <img src="assets/img/logo/logo.png" alt="AL-HIKMAH" height="80" style="margin-bottom: 20px;">
+            <div class="loader-text">AL-HIKMAH</div>
+            <div class="loader-subtext">Memuat...</div>
+        </div>
+    </div>
+
+    <!-- Background Animation -->
+    <div class="bg-islamic-animation" aria-hidden="true">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+        <div class="floating-shape shape-4"></div>
+        <div class="floating-shape shape-5"></div>
+        <div class="floating-shape shape-6"></div>
+        <div class="floating-shape shape-7"></div>
+        <div class="floating-shape shape-8"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar" aria-label="Navigasi utama">
+        <div class="container">
+            <a class="navbar-brand" href="#beranda">
+                <img src="assets/img/logo/logo.png" alt="HOUSE OF AL HIKMAH Logo" height="55" class="brand-logo">
+                <span class="brand-name">AL HIKMAH</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#beranda">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#program">Program</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kelas">Pilihan Kelas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tahfidz">Tahfidz</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeri">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-2">
+                    <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle dark mode">
+                        <i class="bi bi-moon-fill" id="themeIcon"></i>
+                    </button>
+                    <a href="#" class="btn btn-daftar" data-bs-toggle="modal" data-bs-target="#daftarModal">
+                        <i class="bi bi-pencil-square me-1"></i> Daftar Sekarang
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="hero-section" aria-label="Hero">
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6 hero-content" data-reveal>
+                    <div class="hero-badge">
+                        <i class="bi bi-star-fill"></i> Platform Pembelajaran Al-Qur'an Modern
+                    </div>
+                    <h1 class="hero-title">
+                        Platform Belajar <span class="text-gradient">Al-Qur'an Modern</span><br>untuk Anak & Dewasa
+                    </h1>
+                    <p class="hero-subtitle">
+                        Program Tahsin dan Tahfidz dengan sistem belajar online maupun offline yang fleksibel, nyaman, dan terarah. Bimbingan dari pengajar berpengalaman.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-primary-custom btn-lg" data-bs-toggle="modal" data-bs-target="#daftarModal">
+                            <i class="bi bi-pencil-square me-2"></i>Mulai Belajar
+                        </a>
+                        <a href="https://wa.me/6285786689008?text=Assalamualaikum,%20saya%20ingin%20konsultasi%20program%20belajar%20Al-Qur%27an" class="btn btn-outline-custom btn-lg" target="_blank" rel="noopener">
+                            <i class="bi bi-chat-dots me-2"></i>Konsultasi Gratis
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Siswa Aktif</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">30+</span>
+                            <span class="stat-label">Pengajar</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Sistem Fleksibel</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 hero-image-wrapper" data-reveal data-reveal-delay="200">
+                    <div class="hero-image-container">
+                        <div class="hero-glow" aria-hidden="true"></div>
+                        <img src="assets/img/hero.jpg" alt="Belajar Al-Qur'an bersama HOUSE OF AL HIKMAH" class="hero-image" loading="eager">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Kami -->
+    <section id="tentang" class="section-padding" aria-label="Tentang Kami">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0" data-reveal>
+                    <div class="about-image-wrapper">
+                        <img src="assets/img/about.jpg" alt="Suasana belajar Al-Qur'an" class="about-image" loading="lazy">
+                        <div class="about-decoration" aria-hidden="true"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-reveal data-reveal-delay="200">
+                    <div class="section-badge">
+                        <i class="bi bi-info-circle"></i> Tentang Kami
+                    </div>
+                    <h2 class="section-title">Mengapa Memilih <span class="text-gradient">AL-HIKMAH?</span></h2>
+                    <p class="section-description">
+                        AL HIKMAH adalah platform pembelajaran Al-Qur'an modern yang membantu anak dan dewasa belajar Tahsin dan Tahfidz dengan metode menyenangkan, fleksibel, dan terarah.
+                    </p>
+                    <div class="features-grid">
+                        <div class="feature-item"><div class="feature-icon"><i class="bi bi-house-door"></i></div><div class="feature-text"><h5>Belajar ke Rumah / Online</h5><p>Tersedia kelas offline (datang ke rumah) dan online via Zoom</p></div></div>
+                        <div class="feature-item"><div class="feature-icon"><i class="bi bi-calendar-check"></i></div><div class="feature-text"><h5>Jadwal Fleksibel</h5><p>Sesuaikan waktu belajar sesuai kesibukan Anda</p></div></div>
+                        <div class="feature-item"><div class="feature-icon"><i class="bi bi-people"></i></div><div class="feature-text"><h5>Untuk Anak & Dewasa</h5><p>Program khusus anak usia 10-15 tahun dan program dewasa</p></div></div>
+                        <div class="feature-item"><div class="feature-icon"><i class="bi bi-mic"></i></div><div class="feature-text"><h5>Fokus Tahsin & Tahfidz</h5><p>Perbaikan bacaan dan pendampingan hafalan Al-Qur'an</p></div></div>
+                        <div class="feature-item"><div class="feature-icon"><i class="bi bi-heart"></i></div><div class="feature-text"><h5>Pendekatan Sabar & Islami</h5><p>Pengajar ramah dengan metode penuh kasih sayang</p></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kenapa Memilih HOUSE OF AL HIKMAH - Keunggulan Platform -->
+    <section class="section-padding section-alt why-us" aria-label="Keunggulan">
+        <div class="container">
+            <div class="text-center mb-5" data-reveal>
+                <div class="section-badge mx-auto"><i class="bi bi-trophy"></i> Keunggulan Platform</div>
+                <h2 class="section-title">Kenapa Memilih <span class="text-gradient">AL HIKMAH?</span></h2>
+                <p class="section-description mx-auto">Kami hadir untuk memudahkan Anda belajar Al-Qur'an dengan cara yang fleksibel dan menyenangkan.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6" data-reveal><div class="why-card text-center"><div class="why-icon"><i class="bi bi-calendar-week"></i></div><h4>Sistem Fleksibel</h4><p>Atur jadwal belajar sesuai waktu luang Anda</p></div></div>
+                <div class="col-lg-3 col-md-6" data-reveal data-reveal-delay="100"><div class="why-card text-center"><div class="why-icon"><i class="bi bi-laptop"></i></div><h4>Online & Offline</h4><p>Pilih kelas online via Zoom atau tatap muka ke rumah</p></div></div>
+                <div class="col-lg-3 col-md-6" data-reveal data-reveal-delay="200"><div class="why-card text-center"><div class="why-icon"><i class="bi bi-people-fill"></i></div><h4>Semua Usia</h4><p>Program khusus anak (10-15 tahun) dan dewasa</p></div></div>
+                <div class="col-lg-3 col-md-6" data-reveal data-reveal-delay="300"><div class="why-card text-center"><div class="why-icon"><i class="bi bi-star-fill"></i></div><h4>Fokus Tahsin & Tahfidz</h4><p>Pendampingan intensif untuk bacaan dan hafalan</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Belajar -->
+    <section id="program" class="section-padding" aria-label="Program Belajar">
+        <div class="container">
+            <div class="text-center mb-5" data-reveal>
+                <div class="section-badge mx-auto"><i class="bi bi-journal-bookmark"></i> Program Belajar</div>
+                <h2 class="section-title">Pilih Program <span class="text-gradient">Sesuai Kebutuhan</span></h2>
+                <p class="section-description mx-auto">Program lengkap untuk anak dan dewasa, dari pemula hingga mahir.</p>
+            </div>
+            <div class="row g-4">
+                <!-- Program Anak -->
+                <div class="col-lg-6" data-reveal>
+                    <div class="program-section-title"><i class="bi bi-emoji-smile"></i> Program Anak (10-15 tahun)</div>
+                    <div class="row g-4 mt-1">
+                        <div class="col-md-6"><div class="program-card"><div class="program-icon"><i class="bi bi-book-half"></i></div><h4>Belajar Iqra</h4><p>Pengenalan huruf hijaiyah dan metode membaca Iqra dari dasar.</p></div></div>
+                        <div class="col-md-6"><div class="program-card"><div class="program-icon"><i class="bi bi-journal-richtext"></i></div><h4>Belajar Al-Qur'an</h4><p>Membaca Al-Qur'an dengan tajwid dasar yang baik dan benar.</p></div></div>
+                        <div class="col-md-6"><div class="program-card"><div class="program-icon"><i class="bi bi-emoji-smile-beam"></i></div><h4>Adab & Doa Harian</h4><p>Pembelajaran adab Islami dan doa-doa harian untuk membentuk akhlak mulia.</p></div></div>
+                        <div class="col-md-6"><div class="program-card"><div class="program-icon"><i class="bi bi-mic"></i></div><h4>Tahsin Dasar</h4><p>Perbaikan bacaan Al-Qur'an sesuai kaidah tajwid.</p></div></div>
+                    </div>
+                </div>
+                <!-- Program Dewasa -->
+                <div class="col-lg-6" data-reveal data-reveal-delay="200">
+                    <div class="program-section-title"><i class="bi bi-person-badge"></i> Program Dewasa</div>
+                    <div class="row g-4 mt-1">
+                        <div class="col-md-6"><div class="program-card"><div class="program-icon"><i class="bi bi-mic"></i></div><h4>Tahsin Dewasa</h4><p>Perbaikan makhraj, tajwid, dan bacaan Al-Qur'an untuk pemula hingga lanjut.</p></div></div>
+                        <div class="col-md-6"><div class="program-card"><div class="program-icon"><i class="bi bi-book"></i></div><h4>Belajar dari Nol</h4><p>Program khusus dewasa yang ingin belajar membaca Al-Qur'an dari dasar.</p></div></div>
+                        <div class="col-md-6"><div class="program-card"><div class="program-icon"><i class="bi bi-clipboard2-pulse"></i></div><h4>Tahfidz Al-Qur'an</h4><p>Pendampingan hafalan Juz 30 hingga target tertentu.</p></div></div>
+                        <div class="col-md-6"><div class="program-card"><div class="program-icon"><i class="bi bi-people"></i></div><h4>Kelas Muslimah</h4><p>Program khusus muslimah dengan pengajar wanita berpengalaman.</p></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pilihan Kelas: Online / Offline / Hybrid -->
+    <section id="kelas" class="section-padding section-alt" aria-label="Pilihan Kelas">
+        <div class="container">
+            <div class="text-center mb-5" data-reveal>
+                <div class="section-badge mx-auto"><i class="bi bi-grid-3x3-gap-fill"></i> Pilihan Metode Belajar</div>
+                <h2 class="section-title">Belajar <span class="text-gradient">Sesuai Gaya Anda</span></h2>
+                <p class="section-description mx-auto">Tersedia 3 metode belajar yang bisa Anda pilih sesuai kebutuhan.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-reveal>
+                    <div class="kelas-card"><div class="kelas-icon"><i class="bi bi-laptop"></i></div><h3>Kelas Online</h3><p>Belajar via Zoom / Google Meet dari mana saja.</p><ul class="kelas-list"><li><i class="bi bi-check-circle-fill"></i> Fleksibel seluruh Indonesia</li><li><i class="bi bi-check-circle-fill"></i> Cocok untuk anak & dewasa</li><li><i class="bi bi-check-circle-fill"></i> Jadwal fleksibel</li></ul><div class="kelas-badge">Via Zoom</div></div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-reveal data-reveal-delay="100">
+                    <div class="kelas-card featured-kelas"><div class="kelas-icon"><i class="bi bi-house-door"></i></div><h3>Kelas Offline</h3><p>Guru datang ke rumah untuk pengalaman belajar lebih personal.</p><ul class="kelas-list"><li><i class="bi bi-check-circle-fill"></i> Belajar ke rumah Anda</li><li><i class="bi bi-check-circle-fill"></i> Jadwal fleksibel</li><li><i class="bi bi-check-circle-fill"></i> Fokus private learning</li></ul><div class="kelas-badge">Home Visit</div></div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-reveal data-reveal-delay="200">
+                    <div class="kelas-card"><div class="kelas-icon"><i class="bi bi-arrow-repeat"></i></div><h3>Hybrid Learning</h3><p>Kombinasi online dan offline sesuai kebutuhan.</p><ul class="kelas-list"><li><i class="bi bi-check-circle-fill"></i> Fleksibel maksimal</li><li><i class="bi bi-check-circle-fill"></i> Sesuaikan jadwal</li><li><i class="bi bi-check-circle-fill"></i> Pendampingan personal</li></ul><div class="kelas-badge">Best Value</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Tahfidz (Diperbesar & Equal) -->
+    <section id="tahfidz" class="section-padding tahfidz-section" aria-label="Program Tahfidz">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2" data-reveal>
+                    <div class="tahfidz-content">
+                        <div class="section-badge"><i class="bi bi-clipboard2-pulse"></i> Program Unggulan</div>
+                        <h2 class="section-title">Program <span class="text-gradient">Tahfidz Al-Qur'an</span></h2>
+                        <p class="section-description">Pendampingan hafalan Al-Qur'an dengan metode bertahap, murajaah teratur, dan target hafalan yang jelas.</p>
+                        <div class="tahfidz-features">
+                            <div class="tahfidz-item"><i class="bi bi-check-circle-fill"></i> <span>Setoran hafalan rutin setiap pertemuan</span></div>
+                            <div class="tahfidz-item"><i class="bi bi-check-circle-fill"></i> <span>Sistem murajaah untuk hafalan kuat & tidak lupa</span></div>
+                            <div class="tahfidz-item"><i class="bi bi-check-circle-fill"></i> <span>Target hafalan Juz 30 hingga 30 Juz</span></div>
+                            <div class="tahfidz-item"><i class="bi bi-check-circle-fill"></i> <span>Pendampingan hafalan dengan metode menyenangkan</span></div>
+                            <div class="tahfidz-item"><i class="bi bi-check-circle-fill"></i> <span>Evaluasi berkala dan sertifikat</span></div>
+                        </div>
+                        <a href="#" class="btn btn-primary-custom mt-4" data-bs-toggle="modal" data-bs-target="#daftarModal">Daftar Program Tahfidz <i class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1 mb-5 mb-lg-0" data-reveal data-reveal-delay="200">
+                    <div class="tahfidz-image-wrapper">
+                        <img src="assets/img/tahfidz.jpg" alt="Program Tahfidz Al-Qur'an" class="tahfidz-image" loading="lazy" onerror="this.src='https://placehold.co/600x500/0d7a3e/white?text=Tahfidz+Al-Qur%27an'">
+                        <div class="tahfidz-floating-badge">
+                            <i class="bi bi-book"></i> Hafalan Terbimbing
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sistem Pertemuan -->
+    <section class="section-padding" aria-label="Sistem Pertemuan">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2 mb-5 mb-lg-0" data-reveal>
+                    <div class="meeting-image-wrapper">
+                        <img src="assets/img/pertemuan.jpg" alt="Anak-anak belajar mengaji bersama" class="meeting-image" loading="lazy">
+                        <div class="meeting-decoration" aria-hidden="true"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1" data-reveal data-reveal-delay="200">
+                    <div class="section-badge">
+                        <i class="bi bi-calendar-event"></i> Sistem Pertemuan
+                    </div>
+                    <h2 class="section-title">Jadwal <span class="text-gradient">Fleksibel</span> Sesuai Kebutuhan</h2>
+                    <p class="section-description">
+                        Kami memahami setiap keluarga memiliki kebutuhan berbeda. Sistem pertemuan kami dirancang agar fleksibel dan nyaman bagi anak serta orang tua.
+                    </p>
+                    <div class="meeting-options">
+                        <div class="meeting-option">
+                            <div class="option-icon">
+                                <i class="bi bi-1-circle"></i>
+                            </div>
+                            <div class="option-content">
+                                <h5>1x Seminggu</h5>
+                                <p>Cocok untuk anak yang baru memulai, fokus pada konsistensi belajar.</p>
+                            </div>
+                        </div>
+                        <div class="meeting-option">
+                            <div class="option-icon">
+                                <i class="bi bi-2-circle"></i>
+                            </div>
+                            <div class="option-content">
+                                <h5>2–3x Seminggu</h5>
+                                <p>Untuk percepatan belajar, cocok bagi anak yang ingin lebih cepat mahir.</p>
+                            </div>
+                        </div>
+                        <div class="meeting-option">
+                            <div class="option-icon">
+                                <i class="bi bi-calendar2-check"></i>
+                            </div>
+                            <div class="option-content">
+                                <h5>Request Jadwal</h5>
+                                <p>Pilih hari dan jam yang paling sesuai dengan aktivitas keluarga Anda.</p>
+                            </div>
+                        </div>
+                        <div class="meeting-option">
+                            <div class="option-icon">
+                                <i class="bi bi-person-check"></i>
+                            </div>
+                            <div class="option-content">
+                                <h5>Private & Fokus</h5>
+                                <p>Satu guru untuk satu anak, perhatian penuh tanpa gangguan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estimasi Biaya -->
+    <section class="section-padding section-alt" aria-label="Estimasi Biaya">
+        <div class="container">
+            <div class="text-center mb-5" data-reveal>
+                <div class="section-badge mx-auto">
+                    <i class="bi bi-tag"></i> Estimasi Biaya
+                </div>
+                <h2 class="section-title">Paket Belajar <span class="text-gradient">Terjangkau</span></h2>
+                <p class="section-description mx-auto">Pilih paket yang sesuai dengan kebutuhan dan budget keluarga Anda. Investasi terbaik untuk masa depan anak.</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6" data-reveal>
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h4>Basic</h4>
+                            <div class="pricing-price">
+                                <span class="currency">Rp</span>
+                                <span class="amount">150rb</span>
+                                <span class="period">/ bulan</span>
+                            </div>
+                            <p class="pricing-range">Estimasi Rp150.000 – Rp250.000</p>
+                        </div>
+                        <div class="pricing-body">
+                            <ul class="pricing-features">
+                                <li><i class="bi bi-check-lg"></i> 1x pertemuan / minggu</li>
+                                <li><i class="bi bi-check-lg"></i> 4x pertemuan / bulan</li>
+                                <li><i class="bi bi-check-lg"></i> Durasi 60 menit</li>
+                                <li><i class="bi bi-check-lg"></i> 1 anak / 1 guru</li>
+                                <li><i class="bi bi-check-lg"></i> Laporan perkembangan</li>
+                            </ul>
+                            <a href="https://wa.me/6285786689008?text=Assalamualaikum,%20saya%20tertarik%20Paket%20Basic%20AL-HIKMAH" class="btn btn-outline-custom w-100" target="_blank" rel="noopener">
+                                Pilih Paket
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-reveal data-reveal-delay="100">
+                    <div class="pricing-card pricing-popular">
+                        <div class="popular-badge">Paling Diminati</div>
+                        <div class="pricing-header">
+                            <h4>Standard</h4>
+                            <div class="pricing-price">
+                                <span class="currency">Rp</span>
+                                <span class="amount">300rb</span>
+                                <span class="period">/ bulan</span>
+                            </div>
+                            <p class="pricing-range">Estimasi Rp300.000 – Rp500.000</p>
+                        </div>
+                        <div class="pricing-body">
+                            <ul class="pricing-features">
+                                <li><i class="bi bi-check-lg"></i> 2x pertemuan / minggu</li>
+                                <li><i class="bi bi-check-lg"></i> 8x pertemuan / bulan</li>
+                                <li><i class="bi bi-check-lg"></i> Durasi 60 menit</li>
+                                <li><i class="bi bi-check-lg"></i> 1 anak / 1 guru</li>
+                                <li><i class="bi bi-check-lg"></i> Laporan perkembangan</li>
+                                <li><i class="bi bi-check-lg"></i> Konsultasi orang tua</li>
+                            </ul>
+                            <a href="https://wa.me/6285786689008?text=Assalamualaikum,%20saya%20tertarik%20Paket%20Standard%20AL-HIKMAH" class="btn btn-primary-custom w-100" target="_blank" rel="noopener">
+                                Pilih Paket
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-reveal data-reveal-delay="200">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h4>Premium</h4>
+                            <div class="pricing-price">
+                                <span class="amount custom-amount">Hubungi Admin</span>
+                            </div>
+                            <p class="pricing-range">Harga sesuai kebutuhan</p>
+                        </div>
+                        <div class="pricing-body">
+                            <ul class="pricing-features">
+                                <li><i class="bi bi-check-lg"></i> Jadwal fleksibel</li>
+                                <li><i class="bi bi-check-lg"></i> Request jadwal</li>
+                                <li><i class="bi bi-check-lg"></i> Private intensif</li>
+                                <li><i class="bi bi-check-lg"></i> 1 anak / 1 guru</li>
+                                <li><i class="bi bi-check-lg"></i> Laporan perkembangan</li>
+                                <li><i class="bi bi-check-lg"></i> Konsultasi orang tua</li>
+                                <li><i class="bi bi-check-lg"></i> Prioritas penjadwalan</li>
+                            </ul>
+                            <a href="https://wa.me/6285786689008?text=Assalamualaikum,%20saya%20tertarik%20Paket%20Premium%20AL-HIKMAH" class="btn btn-outline-custom w-100" target="_blank" rel="noopener">
+                                Hubungi Kami
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4" data-reveal>
+                <div class="pricing-note">
+                    <i class="bi bi-info-circle"></i>
+                    <span>Biaya dapat berubah sesuai lokasi dan kebutuhan belajar. Hubungi kami untuk informasi lebih lanjut.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="galeri" class="section-padding" aria-label="Galeri Kegiatan">
+        <div class="container">
+            <div class="text-center mb-5" data-reveal>
+                <div class="section-badge mx-auto">
+                    <i class="bi bi-images"></i> Galeri Kegiatan
+                </div>
+                <h2 class="section-title">Suasana <span class="text-gradient">Belajar Kami</span></h2>
+                <p class="section-description mx-auto">Momen-momen berharga dalam kegiatan belajar mengajar AL-HIKMAH.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-reveal>
+                    <div class="gallery-item">
+                        <img src="assets/img/gallery/1.jpg" alt="Anak-anak mengaji bersama guru di rumah" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h5>Belajar Mengaji</h5>
+                                <p>Anak-anak belajar Al-Qur'an bersama ustadz/ustadzah</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-reveal data-reveal-delay="100">
+                    <div class="gallery-item">
+                        <img src="https://image.qwenlm.ai/public_source/b8d9ae1c-4602-4b18-9acf-68853ac39e9b/13af89825-275f-4a77-b3df-08c0c38bf6e8.png" alt="Guru mengajari anak membaca Iqra" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h5>Bimbingan Individual</h5>
+                                <p>Pendekatan personal untuk setiap anak</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-reveal data-reveal-delay="200">
+                    <div class="gallery-item">
+                        <img src="assets/img/gallery/2.jpg" alt="Aktivitas belajar islami anak-anak" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h5>Aktivitas Islami</h5>
+                                <p>Belajar adab dan doa harian dengan gembira</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12" data-reveal data-reveal-delay="300">
+                    <div class="gallery-item">
+                        <img src="https://image.qwenlm.ai/public_source/b8d9ae1c-4602-4b18-9acf-68853ac39e9b/14eac196b-689c-4315-b7f8-a37ae54c6581.png" alt="Suasana belajar nyaman dan islami" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h5>Suasana Belajar Nyaman</h5>
+                                <p>Lingkungan yang kondusif dan menenangkan untuk belajar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12" data-reveal data-reveal-delay="400">
+                    <div class="gallery-item gallery-bg-pattern">
+                        <div class="gallery-pattern-content">
+                            <i class="bi bi-book"></i>
+                            <h5>AL-HIKMAH</h5>
+                            <p>Private Mengaji Datang ke Rumah</p>
+                            <a href="https://wa.me/6285786689008?text=Assalamualaikum,%20saya%20ingin%20info%20lebih%20lanjut%20tentang%20AL-HIKMAH" class="btn btn-sm btn-primary-custom" target="_blank" rel="noopener">
+                                <i class="bi bi-whatsapp me-1"></i> Tanya Sekarang
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section-padding section-alt" aria-label="FAQ">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-5" data-reveal>
+                        <div class="section-badge mx-auto">
+                            <i class="bi bi-question-circle"></i> FAQ
+                        </div>
+                        <h2 class="section-title">Pertanyaan yang <span class="text-gradient">Sering Ditanyakan</span></h2>
+                        <p class="section-description mx-auto">Temukan jawaban dari pertanyaan yang sering diajukan oleh para orang tua.</p>
+                    </div>
+                    <div class="accordion" id="faqAccordion" data-reveal data-reveal-delay="200">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                                    <i class="bi bi-house-door me-2"></i> Apakah guru datang ke rumah?
+                                </button>
+                            </h3>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Ya, benar! Guru kami akan datang langsung ke rumah Anda sesuai jadwal yang telah disepakati. Anda tidak perlu repot mengantar anak ke tempat les. Cukup siapkan ruang belajar yang nyaman di rumah, dan guru kami yang akan datang.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                                    <i class="bi bi-person me-2"></i> Umur berapa yang bisa ikut?
+                                </button>
+                            </h3>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Program kami khusus dirancang untuk anak usia 10–15 tahun. Metode pembelajaran kami disesuaikan dengan usia mereka agar proses belajar lebih efektif dan menyenangkan. Namun, untuk usia di luar range tersebut, silakan konsultasikan terlebih dahulu dengan admin kami.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                                    <i class="bi bi-calendar-check me-2"></i> Apakah bisa request jadwal?
+                                </button>
+                            </h3>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Tentu bisa! Anda bisa memilih hari dan jam yang paling sesuai dengan aktivitas keluarga. Kami menyediakan jadwal fleksibel mulai dari 1x, 2x, hingga 3x pertemuan per minggu. Silakan diskusikan dengan admin kami untuk pengaturan jadwal yang tepat.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                                    <i class="bi bi-play-circle me-2"></i> Apakah tersedia trial?
+                                </button>
+                            </h3>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Ya, kami menyediakan sesi trial untuk anak Anda mencoba terlebih dahulu. Ini bertujuan agar anak merasa nyaman dengan metode belajar dan guru yang mengajar. Hubungi admin kami melalui WhatsApp untuk mengatur sesi trial.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                                    <i class="bi bi-geo-alt me-2"></i> Area mana saja yang tersedia?
+                                </button>
+                            </h3>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Saat ini kami melayani area Jabodetabek dan sekitarnya. Namun, cakupan area kami terus bertambah. Untuk memastikan area Anda tercakup, silakan hubungi admin kami melalui WhatsApp dan informasikan lokasi Anda.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimoni -->
+    <section class="section-padding" aria-label="Testimoni">
+        <div class="container">
+            <div class="text-center mb-5" data-reveal>
+                <div class="section-badge mx-auto">
+                    <i class="bi bi-chat-quote"></i> Testimoni
+                </div>
+                <h2 class="section-title">Apa Kata <span class="text-gradient">Para Orang Tua?</span></h2>
+                <p class="section-description mx-auto">Kepercayaan dan kebahagiaan orang tua adalah motivasi terbesar kami.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-reveal>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">"Anak saya jadi lebih semangat mengaji sejak ikut AL-HIKMAH. Gurunya sangat sabar dan pendekatan yang digunakan membuat anak nyaman belajar di rumah."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="bi bi-person-circle"></i>
+                            </div>
+                            <div class="author-info">
+                                <h6>Ibu Nur Aisyah</h6>
+                                <span>Orang tua murid</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-reveal data-reveal-delay="100">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">"Awalnya anak saya malas mengaji, tapi setelah ikut AL-HIKMAH perubahannya luar biasa. Sekarang malah minta belajar lebih sering. MasyaAllah, terima kasih!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="bi bi-person-circle"></i>
+                            </div>
+                            <div class="author-info">
+                                <h6>Ibu Siti Rahma</h6>
+                                <span>Orang tua murid</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-reveal data-reveal-delay="200">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">"Jadwal fleksibel banget, bisa disesuaikan dengan kegiatan sekolah anak. Gurunya juga datang tepat waktu dan sangat profesional. Highly recommended!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="bi bi-person-circle"></i>
+                            </div>
+                            <div class="author-info">
+                                <h6>Ibu Dewi Lestari</h6>
+                                <span>Orang tua murid</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Penutup -->
+    <section id="kontak" class="cta-section" aria-label="Call to Action">
+        <div class="cta-overlay" aria-hidden="true"></div>
+        <div class="container">
+            <div class="cta-content text-center" data-reveal>
+                <div class="cta-icon"><i class="bi bi-book"></i></div>
+                <h2 class="cta-title">Mulai Perjalanan <span class="text-gradient-light">Belajar Al-Qur'an</span> Bersama AL HIKMAH</h2>
+                <p class="cta-subtitle">Konsultasi gratis untuk menentukan program yang sesuai dengan kebutuhan Anda.</p>
+                <div class="urgency-notice mt-3">🎯 Slot terbatas untuk kelas intensif. Daftar sekarang!</div>
+                <div class="cta-buttons mt-4">
+                    <a href="#" class="btn btn-primary-custom btn-lg" data-bs-toggle="modal" data-bs-target="#daftarModal"><i class="bi bi-pencil-square me-2"></i>Daftar Sekarang</a>
+                    <a href="https://wa.me/6285786689008?text=Assalamualaikum,%20saya%20ingin%20konsultasi%20program%20belajar%20Al-Qur%27an" class="btn btn-outline-light-custom btn-lg" target="_blank"><i class="bi bi-whatsapp me-2"></i>Konsultasi Gratis</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" aria-label="Footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-brand">
+                        <a href="#beranda" class="footer-logo">
+                            <img src="assets/img/logo/logo.png" alt="HOUSE OF AL HIKMAH Logo" height="45" class="footer-logo-img">
+                            <span class="brand-name">AL HIKMAH</span>
+                        </a>
+                        <p class="footer-description">Platform pembelajaran Al-Qur'an modern untuk anak & dewasa. Program Tahsin dan Tahfidz dengan sistem online maupun offline yang fleksibel.</p>
+                        <div class="footer-socials">
+                            <a href="https://www.instagram.com/houseofalhikmah/" target="_blank"><i class="bi bi-instagram"></i></a>
+                            <a href="https://wa.me/6285786689008" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="footer-title">Navigasi</h6>
+                    <ul class="footer-links"><li><a href="#beranda">Beranda</a></li><li><a href="#tentang">Tentang</a></li><li><a href="#program">Program</a></li><li><a href="#kelas">Pilihan Kelas</a></li><li><a href="#tahfidz">Tahfidz</a></li><li><a href="#galeri">Galeri</a></li><li><a href="#faq">FAQ</a></li></ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="footer-title">Program</h6>
+                    <ul class="footer-links"><li><a href="#program">Belajar Iqra & Al-Qur'an</a></li><li><a href="#program">Tahsin (Anak & Dewasa)</a></li><li><a href="#tahfidz">Tahfidz Al-Qur'an</a></li><li><a href="#program">Adab & Doa Harian</a></li><li><a href="#program">Kelas Muslimah</a></li></ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="footer-title">Kontak</h6>
+                    <ul class="footer-contact"><li><i class="bi bi-whatsapp"></i><a href="https://wa.me/6285786689008">+62 857-8668-9008</a></li><li><i class="bi bi-instagram"></i><a href="https://www.instagram.com/houseofalhikmah/">@houseofalhikmah</a></li><li><i class="bi bi-envelope"></i><span>info@alhikmah.id</span></li></ul>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start"><p class="footer-copyright">© 2020 AL HIKMAH. Platform Belajar Al-Qur'an Modern.</p></div>
+                <div class="col-md-6 text-center text-md-end"><p class="footer-made">Dibuat dengan <i class="bi bi-heart-fill text-danger"></i> untuk generasi Qur'ani Indonesia</p></div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/6285786689008?text=Assalamualaikum,%20saya%20ingin%20bertanya%20tentang%20program%20mengaji%20AL-HIKMAH" class="floating-whatsapp" target="_blank" rel="noopener" aria-label="Hubungi via WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+        <span class="wa-tooltip">Chat WhatsApp</span>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap 5.3 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        // Loading Screen
+        window.addEventListener('load', function() {
+            const loadingScreen = document.getElementById('loadingScreen');
+            setTimeout(function() {
+                loadingScreen.classList.add('loaded');
+                setTimeout(function() {
+                    loadingScreen.style.display = 'none';
+                }, 500);
+            }, 1200);
+        });
+
+        // Dark Mode Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const html = document.documentElement;
+
+        function setTheme(dark) {
+            html.setAttribute('data-bs-theme', dark ? 'dark' : 'light');
+            themeIcon.className = dark ? 'bi bi-sun-fill' : 'bi bi-moon-fill';
+            localStorage.setItem('alhikmah-theme', dark ? 'dark' : 'light');
+        }
+
+        const savedTheme = localStorage.getItem('alhikmah-theme');
+        if (savedTheme === 'dark') setTheme(true);
+
+        themeToggle.addEventListener('click', function() {
+            const isDark = html.getAttribute('data-bs-theme') === 'dark';
+            setTheme(!isDark);
+        });
+
+        // Navbar Scroll Effect
+        const navbar = document.getElementById('mainNavbar');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar-scrolled');
+            } else {
+                navbar.classList.remove('navbar-scrolled');
+            }
+        });
+
+        // Smooth Scroll for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetEl = document.querySelector(targetId);
+                if (targetEl) {
+                    const navHeight = navbar.offsetHeight;
+                    const targetPosition = targetEl.offsetTop - navHeight;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+                // Close mobile menu
+                const navCollapse = document.getElementById('navbarNav');
+                if (navCollapse.classList.contains('show')) {
+                    const bsCollapse = bootstrap.Collapse.getInstance(navCollapse);
+                    if (bsCollapse) bsCollapse.hide();
+                }
+            });
+        });
+
+        // Active Nav Link on Scroll
+        const sections = document.querySelectorAll('section[id]');
+        window.addEventListener('scroll', function() {
+            let current = '';
+            sections.forEach(function(section) {
+                const sectionTop = section.offsetTop - 100;
+                if (window.scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+            document.querySelectorAll('.nav-link').forEach(function(link) {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Back to Top Button
+        const backToTopBtn = document.getElementById('backToTop');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 400) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        });
+        backToTopBtn.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Scroll Reveal Animation
+        const revealElements = document.querySelectorAll('[data-reveal]');
+        const revealObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    const delay = entry.target.getAttribute('data-reveal-delay') || 0;
+                    setTimeout(function() {
+                        entry.target.classList.add('revealed');
+                    }, parseInt(delay));
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        revealElements.forEach(function(el) {
+            revealObserver.observe(el);
+        });
+
+        // Floating WhatsApp tooltip
+        const waBtn = document.querySelector('.floating-whatsapp');
+        waBtn.addEventListener('mouseenter', function() {
+            this.querySelector('.wa-tooltip').style.opacity = '1';
+            this.querySelector('.wa-tooltip').style.transform = 'translateX(0)';
+        });
+        waBtn.addEventListener('mouseleave', function() {
+            this.querySelector('.wa-tooltip').style.opacity = '0';
+            this.querySelector('.wa-tooltip').style.transform = 'translateX(-10px)';
+        });
+    </script>
+    
+    <!-- Modal Form Pendaftaran -->
+    <div class="modal fade" id="daftarModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-premium">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold"><i class="bi bi-pencil-square text-success me-2"></i>Formulir Pendaftaran</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-muted mb-4">Isi data berikut, tim kami akan segera menghubungi Anda maksimal 1x24 jam.</p>
+                    <form id="registrationForm" action="#" method="POST">
+                        <div class="row g-3">
+                            <div class="col-md-6"><label class="form-label fw-semibold">Nama Lengkap <span class="text-danger">*</span></label><input type="text" class="form-control" required></div>
+                            <div class="col-md-6"><label class="form-label fw-semibold">Nomor WhatsApp <span class="text-danger">*</span></label><input type="tel" class="form-control" required></div>
+                            <div class="col-md-6"><label class="form-label fw-semibold">Usia Peserta</label><select class="form-select"><option>10-15 tahun (Anak)</option><option>Dewasa (16-30 tahun)</option><option>Dewasa (31-50 tahun)</option><option>50+ tahun</option></select></div>
+                            <div class="col-md-6"><label class="form-label fw-semibold">Lokasi <span class="text-danger">*</span></label><input type="text" class="form-control" placeholder="Kota/Kecamatan" required></div>
+                            <div class="col-md-6"><label class="form-label fw-semibold">Program Pilihan</label><select class="form-select"><option>Tahsin (Perbaikan Bacaan)</option><option>Tahfidz (Hafalan)</option><option>Belajar Al-Qur'an dari Nol</option><option>Program Anak</option><option>Program Dewasa</option></select></div>
+                            <div class="col-md-6"><label class="form-label fw-semibold">Metode Belajar</label><select class="form-select"><option>Kelas Online (Zoom)</option><option>Kelas Offline (Home Visit)</option><option>Hybrid (Kombinasi)</option></select></div>
+                        </div>
+                        <button type="submit" class="btn btn-primary-custom w-100 py-3 fw-bold mt-4"><i class="bi bi-send me-2"></i>Kirim Pendaftaran</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
